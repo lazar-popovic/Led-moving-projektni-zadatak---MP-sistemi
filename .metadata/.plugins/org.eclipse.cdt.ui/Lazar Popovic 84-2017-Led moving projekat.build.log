@@ -1,0 +1,23 @@
+18:27:03 **** Incremental Build of configuration Debug for project Lazar Popovic 84-2017-Led moving projekat ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103x6 -DDEBUG -c -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Lazar Popovic 84-2017-Led moving projekat.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Lazar\Desktop\Led moving projekat\Lazar Popovic 84-2017-Led moving projekat\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lazar Popovic 84-2017-Led moving projekat.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Lazar Popovic 84-2017-Led moving projekat.elf
+ 
+arm-none-eabi-size   Lazar\ Popovic\ 84-2017-Led\ moving\ projekat.elf 
+arm-none-eabi-objdump -h -S  Lazar\ Popovic\ 84-2017-Led\ moving\ projekat.elf  > "Lazar Popovic 84-2017-Led moving projekat.list"
+arm-none-eabi-objcopy  -O ihex  Lazar\ Popovic\ 84-2017-Led\ moving\ projekat.elf  "Lazar Popovic 84-2017-Led moving projekat.hex"
+arm-none-eabi-objcopy  -O binary  Lazar\ Popovic\ 84-2017-Led\ moving\ projekat.elf  "Lazar Popovic 84-2017-Led moving projekat.bin"
+   text	   data	    bss	    dec	    hex	filename
+   4512	     20	   1572	   6104	   17d8	Lazar Popovic 84-2017-Led moving projekat.elf
+Finished building: default.size.stdout
+ 
+Finished building: Lazar Popovic 84-2017-Led moving projekat.hex
+Finished building: Lazar Popovic 84-2017-Led moving projekat.list
+Finished building: Lazar Popovic 84-2017-Led moving projekat.bin
+ 
+ 
+ 
+
+18:27:06 Build Finished. 0 errors, 0 warnings. (took 3s.544ms)
+
